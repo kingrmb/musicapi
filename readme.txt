@@ -8,7 +8,7 @@ virtualenv venv
 source venv/bin/activate
 
 # 安装依赖
-pip3.9 install -r requirements.txt
+pip3.9 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 # 运行应用程序
 sh restart.sh

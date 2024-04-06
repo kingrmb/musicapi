@@ -4,7 +4,7 @@ export LANG=en_US.UTF-8
 
 app="musicapi"
 cd /opt/soft/${app}/
-pids=`ps -ef|grep ${app}|grep -v grep|awk '{print $2}'`
+pids=`ps -ef|grep 'main.py'|grep -v grep|awk '{print $2}'`
 
 
 if [ "${pids}" = "" ]; then
