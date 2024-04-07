@@ -207,7 +207,7 @@ class wyymusic(kugou):
                                    'pic': i['album']['picUrl'],
                                    'lrc': 'http://api2.52jan.com/wyy/lrc/%s.lrc' % song_id})
 
-    def wyy_url(self, m_id: str):
+    def wyy_url(self, music_id: str):
         """
         获取网易音乐源地址
         :param m_id: 音乐id
@@ -233,7 +233,7 @@ class wyymusic(kugou):
             download_url = self.get_wyy_playurl2(music_id)
         return download_url
 
-    def wyy_url2(self, m_id: str):
+    def wyy_url2(self, music_id: str):
         """
         获取网易音乐源地址2
         :param m_id: 音乐id
