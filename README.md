@@ -26,9 +26,9 @@ https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=8672698451
 - 请求地址：`https://api2.52jan.com`
 - 路径：`/music/songlist`
 - 请求方式：`POST`
-- 酷狗音乐示例：`https://api2.52jan.com/music/songlist?server=kugou&id=6222311`
-- 网易云音乐示例：`https://api2.52jan.com/music/songlist?server=wyy&id=7480897649`
-- QQ音乐示例：`https://api2.52jan.com/music/songlist?server=qqmusic&id=8672698451`
+- 酷狗音乐示例：`https://zerohi.icu:5050/music/songlist?server=kugou&id=6222311`
+- 网易云音乐示例：`https://zerohi.icu:5050/music/songlist?server=wyy&id=7480897649`
+- QQ音乐示例：`https://zerohi.icu:5050/music/songlist?server=qqmusic&id=8672698451`
 - 尽量不要用我的接口，下载源码自己部署吧
 - 查看[接口调用情况](https://www.app966.cn/charts/)
 
@@ -41,28 +41,28 @@ id|string|歌单ID|6222311、7480897649、8672698451
 ```
 [{
 	"author": "Uu(刘梦妤)",
-	"lrc": "https://api2.52jan.com/kugou/lrc/0DBB2B56582BE6CB062F79D1D13FE21E.lrc",
+	"lrc": "https://zerohi.icu:5050/kugou/lrc/0DBB2B56582BE6CB062F79D1D13FE21E.lrc",
 	"pic": "https://imge.kugou.com/stdmusic/20210616/20210616180124589946.jpg",
 	"title": "小城小爱",
-	"url": "https://api2.52jan.com/kugou/0DBB2B56582BE6CB062F79D1D13FE21E"
+	"url": "https://zerohi.icu:5050/kugou/0DBB2B56582BE6CB062F79D1D13FE21E"
 }, {
 	"author": "接个吻，开一枪/火鸡/吕口口/Lambert/杨胖雨",
-	"lrc": "https://api2.52jan.com/wyy/lrc/1413464902.lrc",
+	"lrc": "https://zerohi.icu:5050/wyy/lrc/1413464902.lrc",
 	"pic": "https://p1.music.126.net/A157zQR5rR66LMatjYAucQ==/109951164595606537.jpg",
 	"title": "春风十里报新年",
-	"url": "https://api2.52jan.com/wyy/1413464902"
+	"url": "https://zerohi.icu:5050/wyy/1413464902"
 }, {
 	"author": "周杰伦",
-	"lrc": "https://api2.52jan.com/qqmusic/lrc/00265Jxe3JzXOJ.lrc",
+	"lrc": "https://zerohi.icu:5050/qqmusic/lrc/00265Jxe3JzXOJ.lrc",
 	"pic": "https://y.qq.com/music/photo_new/T002R300x300M000000bviBl4FjTpO.jpg",
 	"title": "说了再见",
-	"url": "https://api2.52jan.com/qqmusic/00265Jxe3JzXOJ"
+	"url": "https://zerohi.icu:5050/qqmusic/00265Jxe3JzXOJ"
 }, {
 	"author": "李荣浩",
-	"lrc": "https://api2.52jan.com/qqmusic/lrc/001GLG5B45uLhI.lrc",
+	"lrc": "https://zerohi.icu:5050/qqmusic/lrc/001GLG5B45uLhI.lrc",
 	"pic": "https://y.qq.com/music/photo_new/T002R300x300M000002PwL9x3TiVdh.jpg",
 	"title": "乌梅子酱",
-	"url": "https://api2.52jan.com/qqmusic/001GLG5B45uLhI"
+	"url": "https://zerohi.icu:5050/qqmusic/001GLG5B45uLhI"
 }]
 ```
 

@@ -32,7 +32,7 @@ def kugou_lrc(song_id):
 @application.route(rule="/wyy/<song_id>")
 def wyy_url(song_id):
     wyy = musicapi.wyymusic('')
-    ret = wyy.wyy_url(song_id)
+    ret = wyy.wyy_url2(song_id)
     return redirect(ret, code=301)
 
 
@@ -47,6 +47,7 @@ def wyy_lrc(song_id):
 def qqmusic_url(song_id):
     qqmusic = musicapi.qqmusic('')
     ret = qqmusic.get_music_vkey(song_id)
+    print('qqmusic_url ret: ', ret)
     return redirect(ret, code=301)
 
 
