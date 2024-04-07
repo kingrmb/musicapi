@@ -172,8 +172,8 @@ class wyymusic(kugou):
         """
         # 这里要添加自己的cookie
         url = "http://music.163.com/api/v6/playlist/detail"
-        ret = requests.post(url, data={"s": "0", "id": list_id, "n": "1000", "t": "0"},
-                            headers={"User-Agent": self.ua, "Cookie": self.cookie}).json()
+        ret = requests.post(url, data={"s": "0", "id": self.tid, "n": "1000", "t": "0"},
+                            headers={"User-Agent": self.ua, "Cookie": json.dumps(self.cookie)}).json()
         ids = ''
         for i in ret['playlist']['trackIds']:
             ids += str(i['id']) + ','
@@ -185,7 +185,7 @@ class wyymusic(kugou):
         # ids = ''
         # for i in m_id:
         #     ids += i.replace('/song?id=', '') + ','
-        self.get_music_info(ids[:-1])
+        self.wyy_music_list(ids[:-1])
         return self.data_list
 
     def wyy_music_list(self, t_ids):
